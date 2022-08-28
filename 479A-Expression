@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define dd double
+/*
+ 
+                    AUTHOR        : NEEL SHETH
+                                    AHMEDABAD UNIVERSITY
+
+                    CODEFORCES    : neelxdxd
+                    CODECHEF      : neelxdxd
+
+*/
+
+int main(){
+    ll a,b,c;
+    cin>>a>>b>>c;
+    ll a1 = a+b+c;
+    ll a2 = (a+b)*c;
+    ll a3 = a*(b+c);
+    ll a4 = a*b*c;
+    cout<<max(max(max(a1,a2),a3),a4)<<endl;
+    return 0;
+}
